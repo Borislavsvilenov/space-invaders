@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Darwin-c++"
+	BuildStamp="20240304-0825-Experimental"
+	Name="Borislavs-MacBook-Air.local"
+	Generator="ctest-3.28.3"
+	CompilerName="/Library/Developer/CommandLineTools/usr/bin/c++"
+	CompilerVersion="15.0.0.15000100"
+	OSName="macOS"
+	Hostname="Borislavs-MacBook-Air.local"
+	OSRelease="14.3.1"
+	OSVersion="23D60"
+	OSPlatform="arm64"
+	Is64Bits="1"
+	VendorString="IBM"
+	VendorID="IBM"
+	FamilyID="16777228"
+	ModelID="2"
+	ProcessorCacheSize="131072"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="3072"
+	TotalPhysicalMemory="8192"
+	LogicalProcessorsPerPhysical="8"
+	ProcessorClockFrequency="0"
+	>
+	<Testing>
+		<StartDateTime>Mar 04 18:37 EET</StartDateTime>
+		<StartTestTime>1709570264</StartTestTime>
+		<TestList/>
+		<EndDateTime>Mar 04 18:37 EET</EndDateTime>
+		<EndTestTime>1709570264</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
