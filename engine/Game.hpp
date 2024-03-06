@@ -5,6 +5,7 @@
 #include "Collider.hpp"
 #include "Player.hpp"
 #include "Empty.hpp"
+#include "../Objects/Bullet.hpp"
 
 class Game {
 public:
@@ -13,6 +14,7 @@ public:
 
   std::vector<Collider*> colliders;
   std::vector<Empty> NPCs;
+  std::vector<Bullet> Bullets;
 
   Player player;
 

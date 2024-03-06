@@ -18,6 +18,8 @@ add_executable(Space_Invaders main.cpp
                engine/Collider.hpp
                engine/Empty.cpp
                engine/Empty.hpp
+               Objects/Bullet.cpp
+               Objects/Bullet.hpp
                )
 target_link_libraries(Space_Invaders PRIVATE raylib)
 target_compile_features(Space_Invaders PRIVATE cxx_std_11)
