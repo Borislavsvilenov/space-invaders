@@ -24,7 +24,7 @@ void Empty::update (float dt, std::vector<Collider*> &colliders) {
         diff.x = collider.pos.x - other->pos.x;
         diff.y = collider.pos.y - other->pos.y;
         float d = std::sqrt(diff.x * diff.x + diff.y * diff.y);
-        float overlap = (collider.size.x + other->size.x - d) / 2;
+        float overlap = (collider.size.x + other->size.x - d) / 6;
 
         diff.x /= d;
         diff.y /= d;
