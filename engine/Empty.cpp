@@ -20,6 +20,7 @@ void Empty::update (float dt, std::vector<Collider*> &colliders) {
   for (Collider* other : colliders) {
     if (&collider != other) {
       if (collider.collidesWith(*other)) {
+        collided = true;
         Vector2 diff;
         diff.x = collider.pos.x - other->pos.x;
         diff.y = collider.pos.y - other->pos.y;
@@ -69,6 +70,8 @@ void Empty::friction () {
   } else {
     accel.y = 0;
   }
+
+  collided = false;
 }
 
 void Empty::draw () {

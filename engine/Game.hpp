@@ -13,8 +13,8 @@ public:
   int WindowHeight;
 
   std::vector<Collider*> colliders;
-  std::vector<Empty> NPCs;
-  std::vector<Bullet> Bullets;
+  std::vector<Empty*> NPCs;
+  std::vector<Bullet*> Bullets;
 
   Player player;
 

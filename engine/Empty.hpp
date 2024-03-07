@@ -14,6 +14,8 @@ public:
   Collider collider;
   float minVel = 0.01f;
 
+  bool collided = false;
+
   Empty(int x, int y, int vx, int vy, int w, int h, std::vector<Collider*> &colliders);
 
   void update(float dt, std::vector<Collider*> &colliders);

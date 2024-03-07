@@ -2,7 +2,8 @@
 
 Game::Game(int w, int h) : WindowWidth(w), WindowHeight(h), player(300, 600, 0, 0, 20, 20, colliders) {
   SetTargetFPS(60);
-  NPCs.push_back(Empty(400, 600, -10, 0, 20, 20, colliders));
+  Empty epty = Empty(400, 600, -10, 0, 20, 20, colliders);
+  NPCs.push_back(&epty);
 };
 
 void Game::initWindow () {
@@ -24,9 +25,9 @@ void Game::update() {
   player.update(0.01f, colliders);
   player.draw();
 
-  for (int i = 0; i < NPCs.size(); i++) {
-    NPCs[i].update(0.01f, colliders);
-    NPCs[i].draw();
+  for (auto const& NPC : NPCs) {
+    NPC->update(0.01f, colliders);
+    NPC->draw();
   }
 
   EndDrawing();
